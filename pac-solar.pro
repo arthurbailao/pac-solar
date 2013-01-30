@@ -4,10 +4,10 @@ TARGET = pac-solar
 
 SOURCES += \
     src/main.cpp \
-    src/planet.cpp
+    src/solar_system.cpp
 
 HEADERS += \
-    src/planet.hpp
+    src/solar_system.hpp
 
 unix {
      LIBS += -lGLU -lglut

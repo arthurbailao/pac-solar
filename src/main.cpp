@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <iostream>
 
-#include "planet.hpp"
+#include "solar_system.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 //        return 1;
 //    }
 
-    Planet* planet = new Planet();
+    SolarSystem* planet = new SolarSystem();
     planet->show();
     std::cout << "oioi\n";
 
