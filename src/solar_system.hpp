@@ -2,25 +2,31 @@
 #define SOLARSYSTEM_HPP
 
 #include <QGLWidget>
+#include <QTimer>
 #include <GL/glu.h>
 
 class SolarSystem : public QGLWidget
 {
     Q_OBJECT
 
-    enum Planets {
-        Mercury = 1,
-        Venus = 2,
-        Earth = 3,
-        Mars = 4,
-        Jupiter = 5,
-        Saturn = 6,
-        Uranus = 7,
-        Neptune = 8
-    };
-
 public:
     explicit SolarSystem(QWidget *parent = 0);
+
+    enum Objects {
+        Mercury = 0,
+        Venus = 1,
+        Earth = 2,
+        Mars = 3,
+        Jupiter = 4,
+        Saturn = 5,
+        Uranus = 6,
+        Neptune = 7,
+        Sun = 8,
+        Moon = 9
+    };
+
+public slots:
+    void showObject(Objects obj);
 
 protected:
     void initializeGL();
@@ -31,11 +37,13 @@ private:
     void draw();
     void makeObjects();
     void loadTextures();
+    void light (float r, float g, float b);
 
     GLUquadricObj *obj;
-    GLuint textures[1];
-    GLuint planets[1];
-
+    GLuint textures[10];
+    GLuint objects[10];
+    Objects current;
+    QTimer timer;
 
 };
 

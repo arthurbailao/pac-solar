@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
     SolarSystem* planet = new SolarSystem();
     planet->show();
-    std::cout << "oioi\n";
+    planet->showObject(SolarSystem::Earth);
 
     return app.exec();
 }

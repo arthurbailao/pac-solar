@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/venus.bmp</file>
+        <file>imgs/uranus.bmp</file>
+        <file>imgs/earth.bmp</file>
+        <file>imgs/sun.bmp</file>
+        <file>imgs/saturn.bmp</file>
+        <file>imgs/plutao.bmp</file>
+        <file>imgs/neptune.bmp</file>
+        <file>imgs/mercury.bmp</file>
+        <file>imgs/mars.bmp</file>
+        <file>imgs/moon.bmp</file>
+        <file>imgs/jupiter.bmp</file>
+    </qresource>
+</RCC>

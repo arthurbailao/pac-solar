@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <widget class="QMenu" name="menuPlanetas">
+     <property name="title">
+      <string>Planetas</string>
+     </property>
+     <addaction name="actionMerc_rio"/>
+     <addaction name="actionV_nus"/>
+     <addaction name="actionTerra"/>
+     <addaction name="actionMarte"/>
+     <addaction name="actionJ_pter"/>
+     <addaction name="actionSaturno"/>
+     <addaction name="actionUrano"/>
+     <addaction name="actionNetuno"/>
+    </widget>
+    <widget class="QMenu" name="menuAstros">
+     <property name="title">
+      <string>Astros</string>
+     </property>
+     <addaction name="actionSol"/>
+     <addaction name="actionLua"/>
+    </widget>
+    <addaction name="menuPlanetas"/>
+    <addaction name="menuAstros"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionMerc_rio">
+   <property name="text">
+    <string>Mercúrio</string>
+   </property>
+  </action>
+  <action name="actionV_nus">
+   <property name="text">
+    <string>Vênus</string>
+   </property>
+  </action>
+  <action name="actionTerra">
+   <property name="text">
+    <string>Terra</string>
+   </property>
+  </action>
+  <action name="actionMarte">
+   <property name="text">
+    <string>Marte</string>
+   </property>
+  </action>
+  <action name="actionJ_pter">
+   <property name="text">
+    <string>Júpter</string>
+   </property>
+  </action>
+  <action name="actionSaturno">
+   <property name="text">
+    <string>Saturno</string>
+   </property>
+  </action>
+  <action name="actionUrano">
+   <property name="text">
+    <string>Urano</string>
+   </property>
+  </action>
+  <action name="actionNetuno">
+   <property name="text">
+    <string>Netuno</string>
+   </property>
+  </action>
+  <action name="actionSol">
+   <property name="text">
+    <string>Sol</string>
+   </property>
+  </action>
+  <action name="actionLua">
+   <property name="text">
+    <string>Lua</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
